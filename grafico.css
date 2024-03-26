@@ -1,0 +1,94 @@
+#grafico{
+  padding: 10px 10px 10px 10px;
+  /* border: 1px solid #000000;  */
+  width: 700px;
+  height: 530px;
+  shape-rendering: crispEdges;
+}
+
+.barra{
+  stroke: #000000;
+}
+
+.rotulo{
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-anchor: end;
+}
+
+#btn, #aleatorio{
+  display: block;
+  font-family: monospace;
+  font-size: 20px;
+  letter-spacing: .03rem;
+  background-color: transparent;
+  border: solid .5px #f1f1f1;
+  transition: font-size 0.2s ease;
+}
+#btn:active{
+  font-size: 18px;
+}
+#aleatorio:active{
+  font-size: 18px;
+}
+
+#eixoX text{
+  font-family: monospace;
+  font-size: .85rem;
+  text-anchor: end;
+  transform: translate(-8px, 2px) rotate(-45deg);
+}
+
+#eixoY text{
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+#tituloY{
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: .05rem;
+  text-anchor: middle;
+}
+
+#tituloX{
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-anchor: middle;
+  letter-spacing: .05rem;
+}
+
+.grade path{
+  display: none;
+}
+
+.grade line{
+  stroke: #aaa;
+  stroke-dasharray: 2,1;
+}
+
+.figure{
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  justify-items: center;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: column-reverse;
+  grid-column: 1;
+  grid-area: 1;
+  
+  gap: 10px;
+}
+
+.figura{
+  grid-column: 2 / 3;
+}
