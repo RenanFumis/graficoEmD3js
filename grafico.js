@@ -24,6 +24,7 @@
     let ordemCrescente = true
     let ordemDecrescente = true
 
+    //Aqui temos dois tipos de botões, onde um te duas funções: primeiro clique ordena de forma crescente e o segundo de forma decrescente. O segundo botão é para embaralhar os dados com um unico clique.
     btn.onclick = () => {
       if (ordemCrescente){
         dados.sort((a, b) => a.valor - b.valor)
